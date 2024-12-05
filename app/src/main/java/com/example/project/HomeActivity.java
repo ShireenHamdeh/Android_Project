@@ -48,12 +48,12 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     private void initializeNavigationActions() {
-     //   navigationActions.put(R.id.nav_today, () -> loadFragment(new TodayFragment()));
+       //navigationActions.put(R.id.nav_today, () -> loadFragment(new TodayFragment()));
        // navigationActions.put(R.id.nav_new_task, () -> startActivity(new Intent(this, NewTaskActivity.class)));
-        //navigationActions.put(R.id.nav_all, () -> loadFragment(new AllTasksFragment()));
+       //navigationActions.put(R.id.nav_all, () -> loadFragment(new AllTasksFragment()));
         //navigationActions.put(R.id.nav_completed, () -> loadFragment(new CompletedTasksFragment()));
         //navigationActions.put(R.id.nav_search, () -> loadFragment(new SearchFragment()));
-        navigationActions.put(R.id.nav_profile, () -> startActivity(new Intent(this, ProfileActivity.class)));
+        navigationActions.put(R.id.nav_get_tasks, () -> startActivity(new Intent(this, GetTasks.class)));
         navigationActions.put(R.id.nav_logout, () -> {
             startActivity(new Intent(this, SignInActivity.class));
             finish();
